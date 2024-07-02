@@ -101,7 +101,7 @@ nav .fa{
 
 @media (max-width: 678px){              /*----sve za manje uredjaje----*/
     .text-box h1{
-        font-size: 40px;
+        font-size: 100px;
     }
     .meni ul li{
         display: block;
