@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Gym - Početna</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!----BOOTSTRAP-->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!----HEADER SA MENIJEM-->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="IMG/Logo.png"></a>
+            <div class="meni" id="meniLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>    <!----IKONICA ZA IZLAZAK IZ MENIJA NA MALIM UREDJAIMA-->
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>   <!----IKONICA ZA MENI NA MALIM UREDJAIMA-->
+            <script src="JS/Hide-Show_menu.js"></script>
+        </nav>
+       
+        <div class="text-box">
+            <h1>MAX GYM</h1>                          <!----NASLOV STRANICE SA PARAGRAFOM-->
+            <p>Najbolje teretane u Srbiji</p>
+            <a href="usluge.html" class="hero-btn">Pogledaj nase usluge</a>   <!----DUGME KOJE VODI NA STRANICU USLUGE-->
+        </div>
+        
+    </section>
+
+<section class="red">
+    <div class="kolona">
+    <div class="slider">
+        <div class="list">
+            <div class="item active">
+                <img src="IMG/gym1.png">
+                <div class="content">
+                    <p>maxgym</p>
+                    <h2>Zrenjanin</h2>
+                    <p>Naša teretana u Zrenjaninu nalazi se u srcu grada, pružajući svim ljubiteljima fitnesa 
+                     priliku da vežbaju u prijatnom i motivišućem okruženju. S najsavremenijom opremom i stručnim osobljem, 
+                     MaxGym Zrenjanin je idealno mesto za sve koji žele da poboljšaju svoju fizičku kondiciju.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym2.jpg">
+                <div class="content">
+                    <p>maxgym</p>
+                    <h2>Beograd</h2>
+                    <p>U Beogradu, MaxGym se nalazi na više atraktivnih lokacija, omogućavajući vam da odaberete teretanu 
+                        koja vam najviše odgovara. Bez obzira da li ste na Novom Beogradu, Vračaru ili u centru grada, naše 
+                        teretane su opremljene najnovijom opremom i pružaju vrhunske usluge personalnog treninga i grupnih časova.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym3.png">
+                <div class="content">
+                    <p>maxgym</p>
+                    <h2>Novi Sad</h2>
+                    <p>MaxGym Novi Sad pruža jedinstveno iskustvo vežbanja za sve generacije. Naša prostrana i moderno uređena teretana
+                        smeštena je u blizini glavnih saobraćajnica, čineći je lako dostupnom za sve Novosađane. Dođite i pridružite se 
+                        našoj zajednici posvećenih vežbača!
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym4.jpg">
+                <div class="content">
+                    <p>maxgym</p>
+                    <h2>Subotica</h2>
+                    <p>Naša teretana u Subotici je savršeno mesto za sve koji žele da unaprede svoje zdravlje i fizičku spremnost. 
+                        S ljubaznim i stručnim osobljem, kao i raznovrsnim programima vežbanja, MaxGym Subotica će vam pomoći da 
+                        ostvarite svoje fitnes ciljeve.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym5.png">
+                <div class="content">
+                    <p>maxgym</p>
+                    <h2>Kragujevac</h2>
+                    <p>MaxGym Kragujevac nudi vrhunske uslove za vežbanje svim svojim članovima. Naša teretana je opremljena 
+                        najnovijom tehnologijom i pruža širok spektar grupnih treninga, od joge i pilatesa do intenzivnih HIIT časova. 
+                        Postanite deo naše fitnes porodice u Kragujevcu!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--strelice-->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!--tambnejlovi-->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="IMG/gym1.png">
+                <div class="content">
+                    Zrenjanin
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym2.jpg">
+                <div class="content">
+                    Beograd
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym3.png">
+                <div class="content">
+                    Novi Sad
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym4.jpg">
+                <div class="content">
+                    Subotica
+                </div>
+            </div>
+            <div class="item">
+                <img src="IMG/gym5.png">
+                <div class="content">
+                    Kragujevac
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="kolona">
+        <h1>Naše teretane</h1>
+                <h2>Dobrodošli u MaxGym, <br> Vodeću teretanu koja vam nudi sve što vam je potrebno za postizanje vrhunske forme i zdravog načina života.
+                    Sa ponosom vas pozivamo da posetite jednu od naših modernih i vrhunski opremljenih teretana, dostupnih u pet ključnih gradova Srbije: <br>
+                    Zrenjaninu, Beogradu, Novom Sadu, Subotici i Kragujevcu.<br> <br></h2>
+                <p> Zrenjanin - Koče Kolarova 64 <br> <br>
+                    Beograd - Narodnih Heroja 22; Skenderbegova 31; Mileševska 12b<br> <br>
+                    Novi Sad - Temerinska 95<br><br>
+                    Subotica - Zmaj Jovina 18 <br><br>
+                    Kragujevac - Nikole Pašića 61
+                </p>
+    </div>
+    </section>
+    <script src="JS/slider.js"></script>
+
+    <section>
+        <div class="table-box">
+            <div class="table-row table-head">
+                <div class="table-cell">
+                    <p>RADNO VREME</p>
+                </div>
+                <div class="table-cell">
+                    <p> </p>
+                </div>
+            </div>
+            <div class="table-row">      <!--pon-pet-->
+                <div class="table-cell">
+                    <p>PONEDELJAK-PETAK</p>
+                </div>
+                <div class="table-cell">
+                    <p>08:00 - 24:00</p>
+                </div>
+            </div>
+            <div class="table-row">      <!--sub-->
+                <div class="table-cell">
+                    <p>SUBOTA</p>
+                </div>
+                <div class="table-cell">
+                    <p>09:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="table-row">      <!--ned-->
+                <div class="table-cell">
+                    <p>NEDELJA</p>
+                </div>
+                <div class="table-cell">
+                    <p>16:00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-----DEO SA INFO ZA CLANARINE---->
+    <div class="clanarine">
+        <h1>ČLANARINE</h1>
+        <h2>MESEČNA ČLANARINA</h2>
+        <p>Mesec dana neograničen broj treninga ili <br>
+           14 treninga koji traju 2 meseca <br>
+           2200 RSD za muškarce, 2000 RSD za žene <br>
+           Uz uplatu za 3 meseca članarine 4. mesec je gratis</p>
+           <h2>GODIŠNJA ČLANARINA</h2>
+           <p>(30 treninga mesečno) - 18000 RSD za sve članove</p>
+           <h2>DNEVNI TRENING - 400 RSD</h2>
+           <h2>DNEVNI TRENING SA TRENEROM - 1000 RSD</h2>
+    
+        </div>
+
+
+    <section class="footer">   
+        <div class="omotac">
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://www.facebook.com/maxgym023"><i class="fa fa-facebook-square"></i></a>
+                </div>
+            </div>
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://www.instagram.com/maxgym023"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://x.com/GymBodyFitness_"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://youtube.com/@keribeast3450?si=LKlEHAc1G5CJukiO"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p>Kristijan Kečkeš SI-36/21</p>
+    </section>
+</body>
+</html>

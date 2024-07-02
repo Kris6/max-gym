@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Gym - Usluge</title>
+    <link rel="stylesheet" href="CSS/styleusluge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!----BOOTSTRAP-->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!----HEADER SA MENIJEM-->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="IMG/Logo.png"></a>
+            <div class="meni" id="meniLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>    <!----IKONICA ZA IZLAZAK IZ MENIJA NA MALIM UREDJAIMA-->
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="usluge.html">Usluge</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>   <!----IKONICA ZA MENI NA MALIM UREDJAIMA-->
+            <script src="JS/Hide-Show_menu.js"></script>
+        </nav>
+       
+        <div class="text-box">
+            <h1>USLUGE</h1>                          <!----NASLOV STRANICE SA PARAGRAFOM-->
+        </div>
+        
+    </section>
+
+    <section class="usluge">
+        <div class="red1">
+            <div class="usluge-kol">
+                <h1>Personalni Treninzi</h1>
+                <p> U <b>Max Gym-u</b>, naši personalni treninzi su osmišljeni da vam pomognu da postignete svoje fitnes ciljeve uz podršku iskusnih trenera. 
+                    Bilo da želite da smršate, povećate mišićnu masu, poboljšate kondiciju ili se oporavite nakon povrede, naši treneri će kreirati plan 
+                    treninga posebno za vas. Fokusiramo se na pravilnu tehniku izvođenja vežbi i efikasnost, kako biste brže postigli željene rezultate. 
+                    Možete se informisati o dostupnim trenerima, planovima i cenama u našim fitnes centrima Pridružite nam se u <b>Max Gym-u</b> i uz podršku našeg 
+                    stručnog tima, krenite na put ka zdravijem i jačem telu.</p>
+            </div>
+            <div class="usluge-kol">
+                <img id="idslika" src="IMG/personaltr.jpg" >
+            </div>
+        </div>
+        <div class="red1">
+            <div class="usluge-kol">
+                <img id="idslika" src="IMG/grupnitr.jpg"> 
+            </div>
+            <div class="usluge-kol">
+                <h1>Grupni Treninzi</h1>
+                <p>
+                    Naši grupni treninzi pružaju zabavan i motivišući način da postignete svoje fitnes ciljeve zajedno sa drugima. Vođeni iskusnim trenerima, 
+                    svaka sesija je osmišljena da bude raznovrsna i izazovna, prilagođena svim nivoima kondicije. Bilo da uživate u kardio vežbama, treningu snage, jogi ili HIIT-u, 
+                    imamo nešto za vas. Grupni treninzi ne samo da unapređuju vašu fizičku formu, već i stvaraju osećaj zajedništva i podrške. Posetite nas u <b></b>Max Gym-u</b> i osetite energiju 
+                    grupnog vežbanja dok zajedno radimo ka boljem zdravlju i kondiciji.</p>
+            </div>
+        </div>
+        <div class="red1">
+            <div class="usluge-kol">
+                <h1>Sauna i Spa</h1>
+                <p>U <b>Max Gym-u</b>, osim vrhunskih treninga, možete se opustiti u našoj sauni i spa centru. Nakon napornog vežbanja, ništa ne prija više od opuštanja u sauni koja pomaže u detoksikaciji 
+                    i smanjenju stresa. Naš spa centar nudi razne tretmane koji će vas osvežiti i revitalizovati. Bilo da želite masažu, tretman lica, ili jednostavno mirno mesto za opuštanje, 
+                    naš spa je tu za vas. Pridružite se <b>Max Gym-u</b> i uživajte u iskustvu koje će poboljšati vaše telo i um.</p>
+            </div>
+            <div class="usluge-kol">
+                <img id="idslika" src="IMG/saunaspa.jpg">
+            </div>
+        </div>
+        <div class="red1">
+            <div class="usluge-kol">
+                <img id="idslika" src="IMG/gymbar.jpg"> 
+            </div>
+            <div class="usluge-kol">
+                <h1>Max Gym bar</h1>
+                <p>
+                    Naš smoothie bar je savršeno mesto za osveženje posle treninga. Nudimo raznovrsne, ukusne i hranljive smoothie-je napravljene od svežih sastojaka koji će vam pomoći 
+                    da se osvežite i napunite energijom. Bilo da vam je potreban proteinski napitak za oporavak mišića ili voćni smoothie prepun vitamina, imamo nešto za svakoga. Posetite naš smoothie bar 
+                    i uživajte u zdravim napicima koji će vam pomoći da ostanete puni energije i motivacije na vašem fitnes putovanju.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+<!-----DEO SA INFO ZA CLANARINE---->
+    <div class="clanarine">
+        <h1>ČLANARINE</h1>
+        <h2>MESEČNA ČLANARINA</h2>
+        <p>Mesec dana neograničen broj treninga ili <br>
+           14 treninga koji traju 2 meseca <br>
+           2200 RSD za muškarce, 2000 RSD za žene <br>
+           Uz uplatu za 3 meseca članarine 4. mesec je gratis</p>
+           <h2>GODIŠNJA ČLANARINA</h2>
+           <p>(30 treninga mesečno) - 18000 RSD za sve članove</p>
+           <h2>DNEVNI TRENING - 400 RSD</h2>
+           <h2>DNEVNI TRENING SA TRENEROM - 1000 RSD</h2>
+    
+        </div>
+
+
+    <section class="footer">   
+        <div class="omotac">
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://www.facebook.com/maxgym023"><i class="fa fa-facebook-square"></i></a>
+                </div>
+            </div>
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://www.instagram.com/maxgym023"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://x.com/GymBodyFitness_"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="dugme">
+                <div class="ikona">
+                    <a href="https://youtube.com/@keribeast3450?si=LKlEHAc1G5CJukiO"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p>Kristijan Kečkeš SI-36/21</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+    box-sizing: border-box;    /*----ovo je za celu stranicu----*/
+}                                                   
+.header{                                 /*----sve u klasi header----*/
+    min-height: 85vh;
+    width: 100%;
+    background-image : linear-gradient(rgba(16, 17, 4, 0.685),rgba(16, 17, 4, 0.685)),url(../IMG/gym1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+body{
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+nav img{
+    width: 120px;
+}
+.meni{
+    flex: 1;
+    text-align: right;
+}
+.meni ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.meni ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+.meni ul li ::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.meni ul li:hover ::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 1px rgba(73, 73, 73, 0.507);
+}
+.text-box h1{
+    font-size: 80px;
+    text-transform: capitalize;
+    
+}
+.text-box p{
+    padding: 10px 0px 40px;    
+    font-size: 20px;
+    color: white;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media (max-width: 678px){              /*----sve za manje uredjaje----*/
+    .text-box h1{
+        font-size: 25px;
+    }
+    .meni ul li{
+        display: block;
+    }
+    .meni {
+        position: fixed;
+        background: rgb(72, 73, 0);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .meni ul{
+        padding: 30px;
+    }
+    .red1{
+        flex-direction: column;
+    }
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/*-----------footer----*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.clanarine{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.clanarine h1{
+    color: yellow;
+    padding: 10px 0;
+}
+/*--dugmici za drustvene mreze na dnu stranice---*/
+.dugme{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50px;
+    line-height: 60px;
+    text-align: center;
+    box-shadow: 0px 10px 10 px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 10px 10 px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.omotac .dugme .ikona{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.ikona .fa{
+    color: black;
+}
+
+.omotac .dugme:hover{
+    width: 100px;
+    transition: 0.7s;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.red1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.usluge{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.usluge-kol{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.usluge-kol img{
+    width: 100%;
+}
+.usluge-kol h1{
+    padding-top: 0;
+    color: yellow;
+}
+.usluge-kol p{
+    padding: 60px 0 25px;
+    font-size: 20px;
+}
+
+.usluge-kol :hover{
+    font-size: 25px;
+    transition: 1s;
+}
+/*-----okvir slika i senka preko id-a-----*/
+#idslika{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
